@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Score Keeper</title>
+    <title>MTG Life Point Tracker</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
 </head>
@@ -50,58 +50,8 @@
         </div>
     </div>
 
-    <script>
-                const playerOneHp = document.getElementById("hpOne");
-        const playerTwoHp = document.getElementById("hpTwo");
-        const minusBtnP1 = document.getElementById("minusHpOne");
-        const plusBtnP1 = document.getElementById("plusHpOne");
-        const minusBtnP2 = document.getElementById("minusHpTwo");
-        const plusBtnP2 = document.getElementById("plusHpTwo");
-        const resetBtn = document.getElementById("resetGame");
+    <script src="js/script.js"></script>
 
-        let lifePoint = 20;
-
-        //Life Point Tracker
-        minusBtnP1.addEventListener("click", function() {
-            lifePoint-= 1;
-            playerOneHp.textContent = lifePoint;
-        });
-
-        minusBtnP2.addEventListener("click", function() {
-            lifePoint-= 1;
-            playerTwoHp.textContent = lifePoint;
-        })
-
-        plusBtnP1.addEventListener("click", function() {
-            lifePoint+= 1;
-            playerOneHp.textContent = lifePoint;
-        })
-
-        plusBtnP2.addEventListener("click", function() {
-            lifePoint+= 1;
-            playerTwoHp.textContent = lifePoint;
-        })
-
-        resetBtn.addEventListener("click", function() {
-            reset();
-        })
-
-        //Reseting the Tracker
-        function reset() {
-            let lifePoint = 20;
-            playerOneHp.textContent = lifePoint;
-            playerTwoHp.textContent = lifePoint;
-        }
-
-        //Event log list
-        const textLog = document.getElementById("textBox");
-        const subBtn = document.getElementById("enterLog");
-        const undoLog = document.getElementById("undoLog");
-
-
-
-        
-    </script>
     
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
